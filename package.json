@@ -1,0 +1,22 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "This is a easy to use logger for js based of the python logger",
+  "main": "logger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeveloperJosh/Logger.git"
+  },
+  "keywords": [
+    "Logger"
+  ],
+  "author": "Josh Wells",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DeveloperJosh/Logger/issues"
+  },
+  "homepage": "https://github.com/DeveloperJosh/Logger#readme"
+}
