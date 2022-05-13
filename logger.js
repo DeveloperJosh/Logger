@@ -2,29 +2,34 @@ const fs = require('fs');
 class Logger {
     constructor(data) {
         this.data = data;
+        this.data.console = console;
     }
-    log(data, file) {
-        if (file) {
-            fs.appendFileSync(file, `${data}\n`);
-        }
-        else {
-            this.data.console.log(`Logs: ${data}`);
-        }
+    log(data) {
+        this.data.console.log(`Logger ${data}`);
     }
     error(data) {
-        this.data.console.error(`Logs: ${data}`);
-    }
-    warn(data) {
-        this.data.console.warn(`Logs: ${data}`);
+        this.data.console.error(`Logger ${data}`);
     }
     info(data) {
-        this.data.console.info(`Logs: ${data}`);
+        this.data.console.info(`Logger ${data}`);
+    }
+    warn(data) {
+        this.data.console.warn(`Logger ${data}`);
     }
     debug(data) {
-        this.data.console.debug(`Logs: ${data}`);
+        this.data.console.debug(`Logger ${data}`);
     }
     trace(data) {
-        this.data.console.trace(`Logs: ${data}`);
+        this.data.console.trace(`Logger ${data}`);
+    }
+    dir(data) {
+        this.data.console.dir(data);
+    }
+    time(data) {
+        this.data.console.time(data);
+    }
+    timeEnd(data) {
+        this.data.console.timeEnd(data);
     }
 }
 
