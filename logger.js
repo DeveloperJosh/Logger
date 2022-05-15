@@ -1,4 +1,5 @@
 const fs = require('fs');
+  
 class Logger {
     constructor(data) {
         this.data = data;
